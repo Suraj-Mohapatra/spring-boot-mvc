@@ -1,23 +1,25 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" session="false" %>
 	<!DOCTYPE html>
 	<html>
 
 	<head>
 		<meta charset="ISO-8859-1">
-		<title>Insert title here--</title>
+		<title>home page</title>
+		<script src="./script/home.js"></script>
+		
 	</head>
 
 	<body>
-		<p>Welcome Mr. Surajbhanu Mohapatra</p>
+		<p>Welcome Dear Developer</p>
 
-		<form action="Demo1" method="POST">
-			Name:<input type="text" name="username" /><br />
-			<br /> Password:<input type="password" name="userpass" /><br />
-			<br /> <input type="submit" value="login" /> <br>
-			<br>
-			<% out.println(request.getSession(false).getId()); %>
+		<form action="Login" method="POST">
+			<label for="username">Name:</label>
+			<input type="text" id="username" name="username" /> <br> <br>
+			<label for="userpass">Password:</label>
+			<input type="password" id="password" name="password" /> <br> <br>
+			<input type="submit" value="login" /> <br>
 		</form>
-		<script>
+<!-- 		<script>
 			fetch('./getSessionId')
 				.then(response => response.text())
 				.then(data => {
@@ -26,7 +28,7 @@
 					document.body.appendChild(paragraph);
 				})
 				.catch(error => console.error('Error:', error));
-		</script>
+		</script> -->
 	</body>
 
 	</html>

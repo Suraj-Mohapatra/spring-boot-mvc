@@ -40,15 +40,4 @@ public class DemoServlet1 extends HttpServlet {
 		}
 
 	}
-
-	@Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		System.out.println(request.getMethod() + " method executed");
-		// response.setContentType("text/html");
-		PrintWriter writer = response.getWriter();
-		writer.println("Hi! I am Goku the Saiyan God speaking ok");
-		writer.println("Time in millisec is : " + System.currentTimeMillis());
-		writer.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MMM-yyyy HH:mm:ss")));
-	}
 }

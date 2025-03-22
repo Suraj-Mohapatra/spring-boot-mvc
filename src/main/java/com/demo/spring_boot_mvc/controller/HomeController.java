@@ -10,7 +10,12 @@ public class HomeController {
 
 	@GetMapping("/getSessionId")
 	public String sayHello(HttpServletRequest request) {
-		return request.getSession(false).getId();
+		if(request.getSession(false) != null && request.getSession(false).getAttribute("u_name") != null) {
+			return request.getSession(false).getId();
+		}else {
+			return "session does not exist";
+
+		}
 	}
 
 }
