@@ -15,7 +15,6 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
 
 @WebServlet(name = "DemoServlet2", urlPatterns = {"/Demo2"})
 public class DemoServlet2 extends HttpServlet {
@@ -34,8 +33,6 @@ public class DemoServlet2 extends HttpServlet {
         response.getWriter().println("Hi! I am Vegeta also the Saiyan God");
         response.getWriter().println("Time in millisec is : "+System.currentTimeMillis());
         response.getWriter().println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MMM-yyyy HH:mm:ss")));
-        HttpSession session = request.getSession(false);
-        System.out.println(session.getAttribute("name"));
     }
     
 }

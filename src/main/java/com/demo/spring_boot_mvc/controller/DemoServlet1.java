@@ -16,7 +16,6 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
 
 @WebServlet(name = "DemoServlet1", urlPatterns = { "/Demo1", "/loo" })
 public class DemoServlet1 extends HttpServlet {
@@ -39,9 +38,6 @@ public class DemoServlet1 extends HttpServlet {
 			writer.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MMM-yyyy HH:mm:ss")));
 			writer.println("--------------------------------");
 		}
-
-		HttpSession session = request.getSession(false);
-		session.setAttribute("name", "Goku");
 
 	}
 
