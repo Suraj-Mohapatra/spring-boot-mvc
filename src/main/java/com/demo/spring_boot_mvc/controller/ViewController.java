@@ -26,5 +26,12 @@ public class ViewController {
 	public String loginErr(HttpServletRequest request) {
 		return "login_err";
 	}
+	
+	@RequestMapping({ "/score" })
+	public String score() {
+		return "livescore";
+	}
+	
+	
 
 }

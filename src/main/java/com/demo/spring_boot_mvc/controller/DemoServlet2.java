@@ -33,6 +33,7 @@ public class DemoServlet2 extends HttpServlet {
         response.getWriter().println("Hi! I am Vegeta also the Saiyan God");
         response.getWriter().println("Time in millisec is : "+System.currentTimeMillis());
         response.getWriter().println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MMM-yyyy HH:mm:ss")));
+		
     }
     
 }
