@@ -1,7 +1,7 @@
 # Spring Boot MVC Project
 
 ## Overview
-This project is a Spring Boot MVC application designed to demonstrate the use of the Model-View-Controller (MVC) architecture. It includes features such as dependency injection, RESTful endpoints, and integration with a templating engine for dynamic web pages.
+This is a Spring Boot MVC application designed to demonstrate the use of the Model-View-Controller (MVC) architecture. It includes features such as dependency injection, RESTful endpoints, and integration with a templating engine for dynamic web pages and a lot more.
 
 ## Features
 - RESTful API endpoints for CRUD operations.
