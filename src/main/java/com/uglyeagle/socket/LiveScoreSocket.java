@@ -48,7 +48,7 @@ public class LiveScoreSocket {
 	public static void updateScore() {
 		
 		score += (int) (Math.random() * 10);
-		System.out.println("updated score : " + score);
+		// System.out.println("updated score : " + score);
 		broadcastLiveScore("Live Score: " + score);
 	}
 

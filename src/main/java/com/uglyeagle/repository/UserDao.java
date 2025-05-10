@@ -1,4 +1,4 @@
-package com.uglyeagle.dao;
+package com.uglyeagle.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
