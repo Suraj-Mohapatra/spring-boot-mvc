@@ -32,6 +32,11 @@ public class ViewController {
 		return "livescore";
 	}
 	
+
+	@RequestMapping({ "/reactdemo" })
+	public String reactDemo() {
+		return "reactpage/reactdemo";
+	}
 	
 
 }
